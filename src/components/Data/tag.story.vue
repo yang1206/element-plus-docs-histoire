@@ -91,7 +91,14 @@ const onChange = (status: boolean) => {
 </script>
 
 <template>
-  <Story title="Data/Tag">
+  <Story
+    title="Data/Tag"
+    :layout="{
+      type: 'grid',
+      width: 400,
+    }"
+    icon="mdi:tag-text-outline"
+  >
     <Variant title="Basic usage">
       <el-tag :type="currentType" :size="currentSize">
         Tag

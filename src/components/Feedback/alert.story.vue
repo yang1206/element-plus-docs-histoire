@@ -38,7 +38,7 @@ const fireClose = (e: Event) => {
 </script>
 
 <template>
-  <Story title="Feedback/Alert">
+  <Story title="Feedback/Alert" icon="material-symbols:add-alert-outline">
     <Variant title="Basic Usage">
       <el-alert :type="currentType" :title="currentType" />
       <template #controls>
@@ -180,7 +180,7 @@ Alert provide two different themes, light and dark.
 Set effect to change theme, default is light.
 </docs>
 
-<style>
+<style scoped>
 .el-alert {
   margin: 20px 0 0;
 }

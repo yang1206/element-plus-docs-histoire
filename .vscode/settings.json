@@ -1,0 +1,12 @@
+{
+  "cSpell.words": [
+    "histoire",
+    "pathe"
+  ],
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "references.preferredLocation": "peek"
+}
