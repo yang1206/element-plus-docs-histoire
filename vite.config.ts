@@ -15,7 +15,9 @@ export default defineConfig({
     },
   },
   plugins: [
-    vue(),
+    vue({
+      reactivityTransform: true,
+    }),
     AutoImport({
       imports: [
         'vue',
@@ -24,6 +26,10 @@ export default defineConfig({
       ],
       dts: true,
       vueTemplate: true,
+      dirs: [
+        './src/composables',
+        './src/utils',
+      ],
       resolvers: [ElementPlusResolver()],
     }),
     Components({
